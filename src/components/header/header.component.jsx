@@ -14,7 +14,7 @@ import { connect } from 'react-redux';
 
 import { createStructuredSelector } from 'reselect';
 
-import { selectCartHidden } from '../../redux/cart/cart.selectors'
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 

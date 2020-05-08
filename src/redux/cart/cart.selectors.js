@@ -9,14 +9,16 @@ export const selectCartItems = createSelector(
 
 export const selectCartHidden = createSelector(
     [selectCart],
-    cart => cart.cartHidden
+    cart => cart.hidden
 );
+
 
 export const selecCartItemsCount = createSelector(
     [selectCartItems],
-    cartItems => cartItems.reduce(
-        (accumalatedQuantity, cartItem) => 
-            accumalatedQuantity +cartItem,
-        0
+    cartItems => 
+        cartItems.reduce(
+            (accumalatedQuantity, cartItem) => 
+                accumalatedQuantity +cartItem,
+            0
     )
 );
